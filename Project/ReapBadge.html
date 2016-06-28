@@ -7,6 +7,7 @@
         <link rel="icon" href="images/favicon.ico">
 		<link type="text/css" rel = "stylesheet" href="ReapBadge-Style.css"/>
         <link type="text/css" rel = "stylesheet" href="ReapHeader-style.css"/>
+        <script src="ReapHeaderJavaScript.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -24,7 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div id="logos">
-                        <a href="reap-post.html"> <img id="reapLogo" src="images/header-reap.png" alt="Smiley face"></a>
+                        <a href="ReapDashboard.html"> <img id="reapLogo" src="images/header-reap.png" alt="Smiley face"></a>
                     </div>
                 </div>
                 <div class="custom-menu">
@@ -32,7 +33,7 @@
                     <img id="titleLogo" src="images/header-logo.png" alt="Smiley face">
                     <ul class="nav navbar-nav navbar-right">
                                 <li class="buttons">
-                                    <a href="reap-post.html">
+                                    <a href="ReapDashboard.html">
                                         <img src="images/ico-dashboard.png" />
                                         <img src="images/ico-dashboard-hover.png" class="hover"/>
                                         Dashboard
@@ -40,7 +41,7 @@
                                 </li>
 
                                 <li class="buttons active">
-                                    <a href="ReapHeader.html">
+                                    <a href="ReapBadge.html">
                                         <img src="images/ico-badge.png" class="hov"/>
                                         <img src="images/ico-badge-hover.png" class="hover"/>
                                         Badges
@@ -151,24 +152,56 @@
         </nav>
         </div>
         
-        <script>
-            $(document).ready(function() 
-            {
-                 $("#myNavbar ul li.buttons").click(function(e) 
-                {
-                    e.preventDefault();
-                    $("#myNavbar ul li").removeClass("active");
-                    $(this).addClass("active");
-                });
-            });
-        </script>
         
         <div class="content-wrapper">
             <div class="container-fluid">
                 <div class="redeempoint">
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-md-4">
+                        <div class="box-content">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <img src="images/ico-badge-hover.png">
+                                    <strong>badges & points</strong>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-md-7">
+                                        <div class="col-md-3">
+                                            <div class="badge-content-left">
+                                                <img src="images/fetchUserImage.jpg" class="img-rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div id="tab">
+                                                <strong>Prashant Gupta</strong>
+                                                  <table border="0" width="100%">
+                                                    <tr>
+                                                        <th> <img src="images/ico-badge-orange.png"> </th>
+                                                        <th><img src="images/ico-badge-grey.png"> </th>
+                                                        <th><img src="images/ico-badge-brown.png"> </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 customPoint">
+                                        <div class="points">
+                                            <img src="images/points.png">
+                                            <div class="h1point availablePoints">
+                                                <h1>0 <small>pts</small></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn-redeem">Redeem Points</a>
                     </div>
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-md-8">
                         <div class="box-content">
                             <div class="head-bar no-bg">
                                 <div class="head-inputs">

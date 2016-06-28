@@ -34,6 +34,14 @@
             {
                 min-width: 300px;
             }
+            #forgetPass
+            {
+                margin-top: 10px;
+            }
+            #myModal > div > div > div.modal-footer > button
+            {
+                margin-top: 3px;
+            }
         </style>
     </head>
     <body>
@@ -41,7 +49,7 @@
             <h2>Click Login Button</h2>
             <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
 
-            <div class="modal fade" id="myModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="gridSystemModalLabel">
                 <div class="modal-dialog">
 
                     <div class="modal-content modl">
@@ -52,7 +60,7 @@
                         <div class="modal-body" style="padding:40px 50px;">
                             <form role="form" method="post" action="#" onSubmit="return validate(this);" name="form">
                                 <div class="form-group">
-                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username ( Username is your Email Id )</label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                                 </div>
                                 <div class="form-group">
@@ -66,9 +74,9 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                            <p>Not a member? <a href="#">Sign Up</a></p>
-                            <p>Forgot <a href="#">Password?</a></p>
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove close1"></span> Cancel</button>
+                            <!--<p>Not a member? <a href="#">Sign Up</a></p>-->
+                            <p id="forgetPass">Forgot <a href="#">Password?</a></p>
                         </div>
                     </div>
                 </div>
