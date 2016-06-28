@@ -1,0 +1,41 @@
+CREATE SCHEMA `reap` ;
+
+CREATE TABLE `reap`.`employee` (
+  `emp_id` VARCHAR(20) NOT NULL,
+  `emp_name` VARCHAR(45) NOT NULL,
+  `email_id` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `service_line` VARCHAR(45) NOT NULL,
+  `practice` VARCHAR(45) NOT NULL,
+  `emp_type` VARCHAR(45) NOT NULL,
+  `gold_received` INT NULL,
+  `silver_received` INT NULL,
+  `bronze_received` INT NULL,
+  `gold_having` INT NULL,
+  `silver_having` INT NULL,
+  `bronze_having` INT NULL,
+  PRIMARY KEY (`emp_id`),
+  UNIQUE INDEX `emp_id_UNIQUE` (`emp_id` ASC));
+
+CREATE TABLE `reap`.`badge` (
+  `emp_type` VARCHAR(45) NOT NULL,
+  `gold` INT NOT NULL,
+  `gold_weight` INT NOT NULL,
+  `silver` INT NOT NULL,
+  `silver_weight` INT NOT NULL,
+  `bronze` INT NOT NULL,
+  `bronze_weight` INT NOT NULL,
+  PRIMARY KEY (`emp_type`),
+  UNIQUE INDEX `emp_type_UNIQUE` (`emp_type` ASC));
+
+CREATE TABLE `reap`.`post` (
+  `post_id` VARCHAR(20) NOT NULL,
+  `emp_id_received` VARCHAR(20) NOT NULL,
+  `emp_id_giving` VARCHAR(20) NOT NULL,
+  `gold_` VARCHAR(20) NOT NULL,
+  `karma` VARCHAR(45) NOT NULL,
+  `post_description` VARCHAR(300) NULL,
+  `post_date_time` DATETIME NOT NULL,
+  PRIMARY KEY (`post_id`),
+  UNIQUE INDEX `post_id_UNIQUE` (`post_id` ASC));
+

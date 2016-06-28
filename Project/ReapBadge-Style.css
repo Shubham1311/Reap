@@ -1,0 +1,160 @@
+body 
+{
+    
+}
+
+.content-wrapper
+{
+    background-color: #f1f4f5;
+    margin: 0;
+    padding-bottom: 70px;
+}
+
+.box-content 
+{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.head-bar.no-bg 
+{
+    height: auto !important;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.head-bar 
+{
+    width: 100%;
+    float: left;
+    border-radius: 5px 5px 0 0;
+}
+
+div .head-inputs
+{
+    color: #ffffff;
+}
+
+.head-inputs .col-lg-12.col-md-12
+{
+    padding: 0 !important;
+}
+
+.custom-value-text
+{
+    display: none;
+}
+
+@media (max-width: 767px)
+.custom-value-text 
+{
+    display: block;
+}
+
+@media (max-width: 767px)
+.custom-value-text 
+{
+    width: 100%;
+    background: #8d9fc4;
+    padding: 13px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-tabs.trending 
+{
+    margin: 0;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.nav-tabs.trending
+{
+    display: table;
+}
+
+.nav-tabs.trending li
+{
+    float: inherit;
+}
+
+.nav-tabs.trending
+{
+    background: #dcdcdc;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    border: 0;
+    overflow: hidden;
+    float: left;
+    font-size: 13px;
+}
+
+.nav-tabs.trending li a
+{
+    color: #000000;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.nav-tabs.trending > li.active > a, .nav-tabs.trending > li.active > a:hover 
+{
+    background: #8d9fc4;
+    color: #ffffff;
+    border: 0;
+}
+
+.nav > li > a 
+{
+    position: relative;
+    display: block;
+}
+
+.content-wrapper .redeempoint .content
+{
+    min-height: inherit;
+    
+}
+
+.content-wrapper .content
+{
+    background: #ffffff;
+    width: 100%;
+    float: left;
+    border-top: 0;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.border-full
+{
+    border: 1px solid #dce4ef!important;
+    -webkit-border-radius: 0px 0px 5px 5px!important;
+}
+
+div.content
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 767px)
+span.trending-trigger 
+{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    z-index: 999999;
+}
+
+
