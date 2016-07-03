@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+   <context-param>  
+    <param-name>ReapEmailID</param-name>  
+    <param-value>virtualclassroom1234@gmail.com</param-value>  
+  </context-param>
+  <context-param>  
+    <param-name>ReapEmailPassword</param-name>  
+    <param-value>classroom1234</param-value>  
+  </context-param>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReapForgetPasswordValidate</servlet-name>
+  	<display-name>ReapForgetPasswordValidate</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.ReapForgetPasswordValidate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReapForgetPasswordValidate</servlet-name>
+  	<url-pattern>/ReapForgetPasswordValidate</url-pattern>
+  </servlet-mapping>
+</web-app>
