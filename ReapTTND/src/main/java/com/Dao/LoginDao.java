@@ -6,11 +6,11 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 import com.hibernate.Employee;
-import com.hibernate.HibernateUtil;
+import com.hibernate.util.HibernateUtil;
 
 public class LoginDao {
 	public Employee getUserByEmailId(String emailID) {
-		Session session = HibernateUtil.openSession();
+		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
 		Employee user = null;
 		try {

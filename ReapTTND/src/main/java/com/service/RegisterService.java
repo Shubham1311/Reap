@@ -5,11 +5,11 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.hibernate.Employee;
-import com.hibernate.HibernateUtil;
+import com.hibernate.util.HibernateUtil;
 
 public class RegisterService {
 	public boolean register(Employee user) {
-		Session session = HibernateUtil.openSession();
+		Session session = HibernateUtil.getSessionFactory().openSession();
 		if (isUserExists(user))
 			return false;
 
@@ -31,7 +31,7 @@ public class RegisterService {
 	}
 
 	public boolean isUserExists(Employee user) {
-		Session session = HibernateUtil.openSession();
+		Session session = HibernateUtil.getSessionFactory().openSession();
 		boolean result = false;
 		Transaction tx = null;
 		try {
@@ -53,7 +53,7 @@ public class RegisterService {
 	}
 
 	public boolean isUserExistsbyEmailID(String emailID) {
-		Session session = HibernateUtil.openSession();
+		Session session = HibernateUtil.getSessionFactory().openSession();
 		boolean result = false;
 		Transaction tx = null;
 		try {
