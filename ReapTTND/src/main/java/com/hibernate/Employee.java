@@ -1,5 +1,6 @@
 package com.hibernate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -7,19 +8,33 @@ import javax.persistence.ManyToOne;
 @Entity(name = "employee")
 public class Employee {
 	@Id
+	@Column(nullable= false, length=10)
 	private String empId;
+	@Column(nullable= false, length=30)
 	private String name;
+	@Column(nullable= false, unique = true, length=30)
 	private String emailID;
+	@Column(nullable= false, length=20)
 	private String password;
+	@Column(nullable= false, length=30)
 	private String serviceLine;
+	@Column(nullable= false, length=30)
 	private String practice;
+	@Column(nullable= true, length=10)
 	private int goldReceived;
+	@Column(nullable= true, length=10)
 	private int silverReceived;
+	@Column(nullable= true, length=10)
 	private int bronzeReceived;
+	@Column(nullable= true, length=10)
 	private int goldHaving;
+	@Column(nullable= true, length=10)
 	private int silverHaving;
+	@Column(nullable= true, length=10)
 	private int bronzeHaving;
+	@Column(nullable= true)
 	private boolean verified;
+	@Column(nullable= true)
 	private boolean status;
 
 	@ManyToOne

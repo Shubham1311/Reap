@@ -2,18 +2,26 @@ package com.hibernate;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity(name = "post")
 public class Post {
 	@Id
+	@Column(nullable= false)
 	private int postId;
+	@Column(nullable= false, length=10)
 	private int empIdReceive;
+	@Column(nullable= false, length=10)
 	private int empIdGiving;
+	@Column(nullable= false, length=20)
 	private String badge;
+	@Column(nullable= false, length=20)
 	private String karma;
+	@Column(nullable= false, length=1000)
 	private String postDescription;
+	@Column(nullable= false)
 	private Date postDateTime;
 
 	public int getPostId() {

@@ -3,6 +3,7 @@ package com.hibernate;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -10,12 +11,19 @@ import javax.persistence.OneToMany;
 @Entity(name = "badge")
 public class Badge {
 	@Id
+	@Column(nullable= false, length=30)
 	private String empType;
+	@Column(nullable= true, length=10)
 	private int gold;
+	@Column(nullable= true, length=10)
 	private int goldWeight;
+	@Column(nullable= true, length=10)
 	private int silver;
+	@Column(nullable= true, length=10)
 	private int silverWeight;
+	@Column(nullable= true, length=10)
 	private int bronze;
+	@Column(nullable= true, length=10)
 	private int bronzeWeight;
 
 	@OneToMany(mappedBy = "badge")
